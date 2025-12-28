@@ -1,30 +1,28 @@
-# AI PDF Chatbot (RAG)
+# AI Document & Website Q&A Chatbot (RAG)
 
 ## Problem
-Businesses store important information in PDFs that are hard to search and analyze.
+Businesses struggle to search information inside PDFs and website pages.
 
 ## Solution
-An AI-powered chatbot that allows users to upload PDF documents and ask questions.
-The system uses Retrieval Augmented Generation (RAG) to provide accurate answers
-directly from document content.
+This project provides an AI-powered chatbot that answers questions directly
+from uploaded PDFs or live website content using RAG (Retrieval Augmented Generation).
 
 ## Features
-- Upload PDF documents
-- Automatic text extraction and indexing
-- Ask natural language questions
-- Accurate answers based only on documents
-- Simple REST APIs
+- PDF document Q&A
+- Website page-based Q&A
+- Context-aware answers
+- Chunking + similarity search
+- FastAPI backend
+- Clean request/response flow
 
 ## Tech Stack
 - FastAPI
+- RAG (vector search)
 - Python
-- Retrieval Augmented Generation (RAG)
-- FAISS Vector Database
-- OpenAI Embeddings
+- REST APIs
 
-## How to Run
-
-```bash
-pip install -r requirements.txt
-cp .env.example .env
-uvicorn app.main:app --reload
+## Use Cases
+- Internal company documents
+- Personal portfolios
+- Knowledge base assistants
+- Customer support automation
